@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>Flexbox Pricing Table</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,6 +10,71 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+        background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+
+      }
+
+      .pricing-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        gap: 3rem;
+      }
+
+      .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      text-align: center;
+
+    }
+
+    .plan-title{
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .plan-price{
+      font-size: 48px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .plan-features{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .plan-features li{
+      margin-bottom: 15px;
+    }
+
+    .plan-button{
+      width: 250px;
+      height: 35px;
+      border: none;
+      background-color:green;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+    }
+
+      @media (max-width: 1250px){
+        .pricing-container{
+          height: 100%;
+          flex-direction: column;
+          margin-top: 25px;
+        }
+
+
+
       }
     </style>
   </head>
